@@ -8,7 +8,7 @@ class CreaturesService {
 
   async getAllCreatures() {
     const response = await fetch(this.url);
-    console.log("response", response);
+    //console.log("response", response);
     if (!response.ok) throw new Error();
 
     const data = await response.json();
